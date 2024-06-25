@@ -74,7 +74,7 @@ button{
     border-radius: 1rem;
     border: none;
     color: white;
-    background-color: rgb(199, 10, 10);
+    background-color: black;
     padding: 1rem;
 }
 button:hover{
