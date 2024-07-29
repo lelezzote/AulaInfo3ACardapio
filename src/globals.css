@@ -80,3 +80,6 @@ button{
 button:hover{
     cursor: pointer;
 }
+td{
+    padding-right:120px;
+}
