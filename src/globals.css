@@ -81,5 +81,10 @@ button:hover{
     cursor: pointer;
 }
 td{
-    padding-right:120px;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table{
+    width:700px;
+    border-collapse: collapse;
 }

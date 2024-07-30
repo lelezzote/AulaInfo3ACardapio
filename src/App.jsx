@@ -80,9 +80,11 @@ export default function App() {
                    <table key={produto.id}>
                     <tr>
                     <td>Nome</td>
-                    <tr>{produto.item}</tr>
                     <td>Preço</td>
-                    <tr>{produto.preco}</tr>
+                    </tr>
+                    <tr>
+                    <td>{produto.item}</td>
+                    <td>{produto.preco}</td> 
                     </tr>
                    </table>
     )
