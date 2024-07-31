@@ -88,3 +88,8 @@ table{
     width:700px;
     border-collapse: collapse;
 }
+.buttonType{
+    margin-left: 30px;
+    margin-top: -30px;
+    width: 150px;
+}
