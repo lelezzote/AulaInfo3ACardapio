@@ -61,10 +61,18 @@ export default function App() {
     console.table(listaPedidos);
 
 
-    const removerItem = (id) =>{
-          let listaAux = listaPedidos.filter ((pedido) => pedido.id !== id);
-          setPedidos(listaAux);
-    }
+    const removerItem = (id) => {
+        const listaAux = listaPedidos.filter(
+     (pedido, index)=>{
+     if(index !== id){
+     return pedido
+     }else{
+     return null;
+     }
+     }
+     );
+     setPedidos(listaAux);
+     }
 
 
 
@@ -88,16 +96,12 @@ export default function App() {
                    listaPedidos.map((produto) =>
                    <table key={produto.id}>
                     <tr>
-                    <td>Nome</td>
-                    <td>Preço</td>
-                    </tr>
-                    <tr>
-                    <td>{produto.item}</td>
-                    <td>{produto.preco}</td> 
-                    <tr>
-                    <button onlick={() => removerItem(produto.id)} className="buttonType">Remover</button>
-                    </tr>
-                    </tr>
+                                <td>{produto.item}</td>
+                                <td>{produto.preco}</td>
+                                <td>
+                                    <button onClick={() => removerItem(produto.id)} className="buttonType">Remover</button>
+                                </td>
+                            </tr>
                    </table>
     )
                    }
@@ -105,3 +109,4 @@ export default function App() {
         </div>
     );
 }
+
